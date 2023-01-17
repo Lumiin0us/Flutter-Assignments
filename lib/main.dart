@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-
-import 'home.dart';
+import 'package:flutter_application_2/home.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -13,10 +12,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Home(),
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         brightness: Brightness.dark,
       ),
-      debugShowCheckedModeBanner: false,
     );
   }
 }
